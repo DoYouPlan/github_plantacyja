@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rassada">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plantacyja/rassada/build/distributions/rassada.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

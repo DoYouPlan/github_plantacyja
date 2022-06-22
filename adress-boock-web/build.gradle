@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
+}
+dependencies {
+    implementation 'org.testng:testng:7.6.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.2.1'
+    implementation 'org.webjars.npm:after:0.8.2'
+    implementation 'me.lessis:after-party_2.11:0.1.3'
+    implementation 'com.tolitius:wrap:0.1.003'
+    implementation 'org.robolectric:junit:4.8.1'
+    implementation 'org.hamcrest:hamcrest:2.2'
+    implementation 'junit:junit:4.13.2'
+    implementation 'org.apache:apache:26'
+
+
+}

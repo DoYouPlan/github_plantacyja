@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply  plugin: 'application'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.testng:testng:7.6.0'
+    implementation 'org.hamcrest:hamcrest:2.2'
+    implementation 'com.mastfrog:selenium:2.8.2'
+}
+ test {
+    useTestNG{
+        suites 'src/test/resourses/testng.xml'
+            }
+    if (project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')){
+        systemProperty 'verifyUI', "${verifyUI}"
+    }
+}
