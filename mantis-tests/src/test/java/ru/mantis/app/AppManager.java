@@ -17,7 +17,7 @@
 
       private String browser;
 
-      public AppManager(String browser) {
+      public AppManager() {
 
           this.browser = browser;
           properties = new Properties();
@@ -51,6 +51,12 @@
 
       public String getProperty(String key) {
           return properties.getProperty(key);
+      }
+
+      public void login(String admin, String secret, String chrome) {
+      }
+
+      public void logout() {
       }
   }
 
